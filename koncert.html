@@ -1,0 +1,35 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="Stylesheet" type="text/css" href="styl.css" />
+<link rel="Shortcut icon" href="iko.jpg" />
+<title>Rejestracja na koncert</title>
+<link rel="Stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+	<script>
+	var wybor = confirm("wykonawca");
+  alert("zarejestrowano zgłoszenie na koncert " + wybor)
+	</script>
+<form class="for" method="post" action="mailto:koncert@lublin.pl" subject="Rejestracja-Koncert">
+    <h3>Rejestracja na Koncert</h3>
+	<select name="wykonawca">
+		<option>The Rolling Stones</option>
+		<option>The Bettles</option>
+		<option>Elvis Presley</option>
+	</select><br/>
+    <input type="text" id="imie" name="imie" pattern="[A-Za-zĘĄŚĆŁÓŻŹęąśćżźłó]+" maxlength="20" placeholder="Imię"><br/>
+    <input type="text" id="nazwisko" name="nazwisko" pattern="[A-Za-zĘĄŚĆŁÓŻŹęąśćżźłó]+" maxlength="20"placeholder="Nazwisko"><br/>
+    <input type="text" id="num" name="num" maxlength="9" pattern="[0-9]{9}" placeholder="Numer telefonu"><br/>
+    <input type="email" id="em" name="em" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" placeholder="E-mail"><br/>
+    <input type="number" id="wiek"  min="24" max="40" pattern="[0-9]{9}" name="wiek" placeholder="Wiek"><br/>
+    <input type="submit" value="Wyślij"><br/>
+    <input type="reset" value="wyczyść">
+	
+
+    
+    
+   
+    </form>
+</body>
+</html>
